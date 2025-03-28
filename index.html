@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing speed test Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Typing Speed Test</h2>
+            <div class="mode-selection">
+                <label for="mode">Choose Mode:</label>
+                <select id="mode">
+                    <option value="standard">Standard Typing Test</option>
+                    <option value="live">Live Matching Test</option>
+                </select>
+            </div>
+            <p id="ShowSentence"></p>
+            <div class="TypingBox">
+                <textarea name="textarea" id="textarea" cols="30" rows="10" disabled></textarea>
+            </div>
+            <div class="button">
+                <button class="btn">Start</button>
+            </div>
+            <p id="score"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

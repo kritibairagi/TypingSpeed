@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Typing Test</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Live Typing Test</h2>
+        
+        <label for="mode">Select Mode:</label>
+        <select id="mode">
+            <option value="live">Live Typing Test</option>
+            <option value="standard">Standard Typing Test</option>
+        </select>
+
+        <div id="header">
+            <div id="info">Time: <span id="timer">30</span> sec</div>
+            <div id="button">
+                <button onclick="newGame()">New Game</button>
+            </div>
+        </div>
+        <div id="test" tabindex="0">
+            <div id="words"></div>
+            <div id="cursor"></div>
+            <div id="focus-error">Click here to focus</div>
+        </div>
+        <div id="result" style="display: none;">
+            <h3>Results</h3>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+    </div>
+    <script src="typing.js"></script>
+</body>
+</html>
